@@ -19,5 +19,7 @@ cd ~
 mv .vimrc .bup_vimrc
 echo "file was changed to .bup_vimrc" >> linuxsetup.log
 fi
+# Overwrite the contents of the etc/vimrc file to .vimrc
 ~/.dotfiles/etc/vimrc > ~/.vimrc
+# add the statement to the end of the .bashrc file in home directory
 echo "source ~/.dotfiles/etc/bashrc_custom" >> ~/.bashrc

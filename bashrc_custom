@@ -21,15 +21,15 @@ alias rmtrash="rm -rf ~/.TRASH/*"
 ##########
 # Function to tar -zcvf a directory
 function targzfunc() {
-VAR=$1;
-VAR=${VAR%/};
-tar -zcvf "$VAR.tar.gz" ./"$VAR"
+	VAR=$1;
+	VAR=${VAR%/};
+	tar -zcvf "$VAR.tar.gz" ./"$VAR"
 }
 # Function to tar -xvf a .tar.gz file.
 function untarfunc() {
-VAR=$1
-VAR=${VAR}
-tar -xvf ./"$VAR"
+	VAR=$1
+	VAR=${VAR}
+	tar -xvf ./"$VAR"
 }
 
 
